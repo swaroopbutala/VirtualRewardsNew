@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E4CF5C0F1AB4A39400A87384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C0E1AB4A39400A87384 /* AppDelegate.swift */; };
-		E4CF5C111AB4A39400A87384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C101AB4A39400A87384 /* ViewController.swift */; };
 		E4CF5C141AB4A39400A87384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CF5C121AB4A39400A87384 /* Main.storyboard */; };
 		E4CF5C161AB4A39400A87384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF5C151AB4A39400A87384 /* Images.xcassets */; };
 		E4CF5C191AB4A39400A87384 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF5C171AB4A39400A87384 /* LaunchScreen.xib */; };
 		E4CF5C251AB4A39400A87384 /* VirtualRewardsNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C241AB4A39400A87384 /* VirtualRewardsNewTests.swift */; };
+		E4CF5C311AB4A3DC00A87384 /* VirtualRewardsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C301AB4A3DC00A87384 /* VirtualRewardsClient.swift */; };
+		E4CF5C331AB4A3F200A87384 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C321AB4A3F200A87384 /* Student.swift */; };
+		E4CF5C351AB4A3FD00A87384 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C341AB4A3FD00A87384 /* Class.swift */; };
+		E4CF5C371AB4A40700A87384 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C361AB4A40700A87384 /* Teacher.swift */; };
+		E4CF5C391AB4A6F300A87384 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C381AB4A6F300A87384 /* StudentsViewController.swift */; };
+		E4CF5C3B1AB4AF4B00A87384 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		E4CF5C091AB4A39400A87384 /* VirtualRewardsNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualRewardsNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF5C0D1AB4A39400A87384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF5C0E1AB4A39400A87384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4CF5C101AB4A39400A87384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4CF5C131AB4A39400A87384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4CF5C151AB4A39400A87384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4CF5C181AB4A39400A87384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E4CF5C1E1AB4A39400A87384 /* VirtualRewardsNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualRewardsNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF5C231AB4A39400A87384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF5C241AB4A39400A87384 /* VirtualRewardsNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualRewardsNewTests.swift; sourceTree = "<group>"; };
+		E4CF5C301AB4A3DC00A87384 /* VirtualRewardsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRewardsClient.swift; sourceTree = "<group>"; };
+		E4CF5C321AB4A3F200A87384 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E4CF5C341AB4A3FD00A87384 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		E4CF5C361AB4A40700A87384 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		E4CF5C381AB4A6F300A87384 /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 		E4CF5C001AB4A39400A87384 = {
 			isa = PBXGroup;
 			children = (
+				E4CF5C2E1AB4A3A900A87384 /* API */,
+				E4CF5C2F1AB4A3BB00A87384 /* Models */,
 				E4CF5C0B1AB4A39400A87384 /* VirtualRewardsNew */,
 				E4CF5C211AB4A39400A87384 /* VirtualRewardsNewTests */,
 				E4CF5C0A1AB4A39400A87384 /* Products */,
@@ -78,10 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				E4CF5C0E1AB4A39400A87384 /* AppDelegate.swift */,
-				E4CF5C101AB4A39400A87384 /* ViewController.swift */,
+				E4CF5C381AB4A6F300A87384 /* StudentsViewController.swift */,
 				E4CF5C121AB4A39400A87384 /* Main.storyboard */,
 				E4CF5C151AB4A39400A87384 /* Images.xcassets */,
 				E4CF5C171AB4A39400A87384 /* LaunchScreen.xib */,
+				E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */,
 				E4CF5C0C1AB4A39400A87384 /* Supporting Files */,
 			);
 			path = VirtualRewardsNew;
@@ -110,6 +123,24 @@
 				E4CF5C231AB4A39400A87384 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CF5C2E1AB4A3A900A87384 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF5C301AB4A3DC00A87384 /* VirtualRewardsClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		E4CF5C2F1AB4A3BB00A87384 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF5C321AB4A3F200A87384 /* Student.swift */,
+				E4CF5C341AB4A3FD00A87384 /* Class.swift */,
+				E4CF5C361AB4A40700A87384 /* Teacher.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4CF5C111AB4A39400A87384 /* ViewController.swift in Sources */,
+				E4CF5C371AB4A40700A87384 /* Teacher.swift in Sources */,
+				E4CF5C311AB4A3DC00A87384 /* VirtualRewardsClient.swift in Sources */,
+				E4CF5C391AB4A6F300A87384 /* StudentsViewController.swift in Sources */,
 				E4CF5C0F1AB4A39400A87384 /* AppDelegate.swift in Sources */,
+				E4CF5C3B1AB4AF4B00A87384 /* StudentTableViewCell.swift in Sources */,
+				E4CF5C351AB4A3FD00A87384 /* Class.swift in Sources */,
+				E4CF5C331AB4A3F200A87384 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

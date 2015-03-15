@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4B3EB521AB6194E00F9B124 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3EB511AB6194E00F9B124 /* AddStudentViewController.swift */; };
 		E4CF5C0F1AB4A39400A87384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C0E1AB4A39400A87384 /* AppDelegate.swift */; };
 		E4CF5C141AB4A39400A87384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CF5C121AB4A39400A87384 /* Main.storyboard */; };
 		E4CF5C161AB4A39400A87384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF5C151AB4A39400A87384 /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4B3EB511AB6194E00F9B124 /* AddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 		E4CF5C091AB4A39400A87384 /* VirtualRewardsNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualRewardsNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF5C0D1AB4A39400A87384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF5C0E1AB4A39400A87384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				E4CF5C151AB4A39400A87384 /* Images.xcassets */,
 				E4CF5C171AB4A39400A87384 /* LaunchScreen.xib */,
 				E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */,
+				E4B3EB511AB6194E00F9B124 /* AddStudentViewController.swift */,
 				E4CF5C0C1AB4A39400A87384 /* Supporting Files */,
 			);
 			path = VirtualRewardsNew;
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B3EB521AB6194E00F9B124 /* AddStudentViewController.swift in Sources */,
 				E4CF5C371AB4A40700A87384 /* Teacher.swift in Sources */,
 				E4CF5C311AB4A3DC00A87384 /* VirtualRewardsClient.swift in Sources */,
 				E4CF5C391AB4A6F300A87384 /* StudentsViewController.swift in Sources */,
@@ -443,6 +447,7 @@
 				E4CF5C2A1AB4A39400A87384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4CF5C2B1AB4A39400A87384 /* Build configuration list for PBXNativeTarget "VirtualRewardsNewTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +456,7 @@
 				E4CF5C2D1AB4A39400A87384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

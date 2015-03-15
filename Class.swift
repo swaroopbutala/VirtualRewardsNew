@@ -13,7 +13,6 @@ let classKey = "CLASS_KEY"
 
 class Class: NSObject{
     let defaults = NSUserDefaults.standardUserDefaults()
-    
     class var sharedInstance: Class{
         struct Static{
             static var instance: Class = VirtualRewardsClient.sharedInstance.getClass()
@@ -25,14 +24,20 @@ class Class: NSObject{
     
     func addStudent(name: String, value: Int){
         students.append(Student(name: name, startingPoints: value))
-        defaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Class.sharedInstance), forKey: classKey)
+        defaults.setObject(Class.sharedInstance, forKey: classKey)
         VirtualRewardsClient.sharedInstance.getClass()
     }
     
     func addStudent(name: String){
         students.append(Student(name: name))
-        defaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Class.sharedInstance), forKey: classKey)
+        defaults.setObject(Class.sharedInstance, forKey: classKey)
         VirtualRewardsClient.sharedInstance.getClass()
+    }
+    
+    func addStudents(students: [String]){
+        for name in students{
+            Class.sharedInstance.addStudent(name)
+        }
     }
     
     func printClass(){

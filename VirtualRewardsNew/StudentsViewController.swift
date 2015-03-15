@@ -8,24 +8,34 @@
 
 import UIKit
 
-class StudentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StudentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     //var currentClass = VirtualRewardsClient.sharedInstance.getClass()
+    lazy var searchBar:UISearchBar = UISearchBar(frame: CGRectMake(0, 0, 200, 20))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
+        //tableView.dataSource = self
+        tableView.delegate = self
+        searchBar.delegate = self
+        searchBar.placeholder = "Search Students"
+        var leftNavBarButton = UIBarButtonItem(customView: searchBar)
+        self.navigationItem.leftBarButtonItem = leftNavBarButton
+       tableView.registerClass(StudentTableViewCell.self, forCellReuseIdentifier: "studentCell")
+        //Class.sharedInstance.addStudent("Dhruv")
+        //Class.sharedInstance.printClass()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        Class.sharedInstance.students = VirtualRewardsClient.sharedInstance.searchWithTerm(searchText)
+        tableView.reloadData()
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Class.sharedInstance.students.count
     }

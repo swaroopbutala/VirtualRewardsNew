@@ -37,7 +37,7 @@ class ClassRoom: NSObject, NSCoding{
         if (students == nil) {
             students = [Student]()
             println( "test8 init of classroom");
-            VirtualRewardsClient.sharedInstance.updateSavedClass()
+            //VirtualRewardsClient.sharedInstance.updateSavedClass()
             println( "test9 init of classroom");
         }
     }

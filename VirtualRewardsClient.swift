@@ -56,14 +56,13 @@ class VirtualRewardsClient{
             //Class.sharedInstance.teacher = currentClass.teacher
             return currentClass
             
-        } /*else {
-            var newClass = Class()
+        } else {
+            var newClass = ClassRoom()
             newClass.students = [Student]()
             var encodedObject: NSData = NSKeyedArchiver.archivedDataWithRootObject(newClass)
             defaults.setObject(encodedObject, forKey: classKey)
             defaults.synchronize()
             return newClass
-        }*/
-        return ClassRoom()
+        }
     }
 }

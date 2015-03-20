@@ -13,13 +13,15 @@ class VirtualRewardsClient{
     class var sharedInstance: VirtualRewardsClient{
         struct Static{
             static var instance = VirtualRewardsClient()
+           // println("sdfd")
         }
+        println("\(Static.instance) sdfd")
         return Static.instance
     }
     
     func searchWithTerm(term: String) -> [Student]{
         var defaults = NSUserDefaults.standardUserDefaults()
-        var currentClass = Class.sharedInstance
+        var currentClass = ClassRoom.sharedInstance
         var students = currentClass.students
         var selectedStudents: [Student] = [Student]()
         for student in students{
@@ -34,25 +36,34 @@ class VirtualRewardsClient{
         return selectedStudents
     }
     
-    func getClass() -> Class{
+    func updateSavedClass(){
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var encodedObject: NSData = NSKeyedArchiver.archivedDataWithRootObject(ClassRoom.sharedInstance)
+        defaults.setObject(encodedObject, forKey: classKey)
+        defaults.synchronize()
+    }
+    
+    func getClass() -> ClassRoom{
         var defaults = NSUserDefaults.standardUserDefaults()
         println(defaults.objectForKey(classKey))
+        var currentClass:ClassRoom!
         if let data = defaults.objectForKey(classKey) as? NSData{
             //let unarc = NSKeyedUnarchiver(forReadingWithData: data)
             //unarc.setClass(Class.self, forClassName: "Class")
-            let currentClass = NSKeyedUnarchiver.unarchiveObjectWithData(data) as Class
+            currentClass = NSKeyedUnarchiver.unarchiveObjectWithData(data) as ClassRoom
             println("entering")
-            Class.sharedInstance.students = currentClass.students
-            Class.sharedInstance.teacher = currentClass.teacher
+            //Class.sharedInstance.students = currentClass.students
+            //Class.sharedInstance.teacher = currentClass.teacher
             return currentClass
             
-        } else {
+        } /*else {
             var newClass = Class()
             newClass.students = [Student]()
             var encodedObject: NSData = NSKeyedArchiver.archivedDataWithRootObject(newClass)
             defaults.setObject(encodedObject, forKey: classKey)
             defaults.synchronize()
             return newClass
-        }
+        }*/
+        return ClassRoom()
     }
 }

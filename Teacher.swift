@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 class Teacher{
-    var currentClass:Class?
-    init(currentClass: Class){
+    var currentClass:ClassRoom?
+    init(currentClass: ClassRoom){
         self.currentClass = currentClass
     }
 }

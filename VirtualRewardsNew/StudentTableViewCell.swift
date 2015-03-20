@@ -10,16 +10,36 @@ import UIKit
 
 class StudentTableViewCell: UITableViewCell {
     let defaults = NSUserDefaults.standardUserDefaults()
+    
+    var index:Int?
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var pointsLabel: UILabel!
+    
     var student: Student?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        nameLabel.text = student?.name
+        pointsLabel.text = ": \(student?.points)"
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func plusAction(sender: AnyObject) {
+        student!.points = student!.points + 1
+        ClassRoom.sharedInstance.students[index!] = student!
+        VirtualRewardsClient.sharedInstance.updateSavedClass()
+    }
+    
+    @IBAction func minusAction(sender: AnyObject) {
+        student!.points = student!.points - 1
+        ClassRoom.sharedInstance.students[index!] = student!
+        VirtualRewardsClient.sharedInstance.updateSavedClass()
     }
 
 }

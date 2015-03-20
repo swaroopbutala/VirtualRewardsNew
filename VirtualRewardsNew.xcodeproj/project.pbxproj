@@ -15,7 +15,7 @@
 		E4CF5C251AB4A39400A87384 /* VirtualRewardsNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C241AB4A39400A87384 /* VirtualRewardsNewTests.swift */; };
 		E4CF5C311AB4A3DC00A87384 /* VirtualRewardsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C301AB4A3DC00A87384 /* VirtualRewardsClient.swift */; };
 		E4CF5C331AB4A3F200A87384 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C321AB4A3F200A87384 /* Student.swift */; };
-		E4CF5C351AB4A3FD00A87384 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C341AB4A3FD00A87384 /* Class.swift */; };
+		E4CF5C351AB4A3FD00A87384 /* ClassRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C341AB4A3FD00A87384 /* ClassRoom.swift */; };
 		E4CF5C371AB4A40700A87384 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C361AB4A40700A87384 /* Teacher.swift */; };
 		E4CF5C391AB4A6F300A87384 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C381AB4A6F300A87384 /* StudentsViewController.swift */; };
 		E4CF5C3B1AB4AF4B00A87384 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */; };
@@ -44,7 +44,7 @@
 		E4CF5C241AB4A39400A87384 /* VirtualRewardsNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualRewardsNewTests.swift; sourceTree = "<group>"; };
 		E4CF5C301AB4A3DC00A87384 /* VirtualRewardsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRewardsClient.swift; sourceTree = "<group>"; };
 		E4CF5C321AB4A3F200A87384 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		E4CF5C341AB4A3FD00A87384 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		E4CF5C341AB4A3FD00A87384 /* ClassRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRoom.swift; sourceTree = "<group>"; };
 		E4CF5C361AB4A40700A87384 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		E4CF5C381AB4A6F300A87384 /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		E4CF5C3A1AB4AF4B00A87384 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E4CF5C321AB4A3F200A87384 /* Student.swift */,
-				E4CF5C341AB4A3FD00A87384 /* Class.swift */,
+				E4CF5C341AB4A3FD00A87384 /* ClassRoom.swift */,
 				E4CF5C361AB4A40700A87384 /* Teacher.swift */,
 			);
 			name = Models;
@@ -252,7 +252,7 @@
 				E4CF5C391AB4A6F300A87384 /* StudentsViewController.swift in Sources */,
 				E4CF5C0F1AB4A39400A87384 /* AppDelegate.swift in Sources */,
 				E4CF5C3B1AB4AF4B00A87384 /* StudentTableViewCell.swift in Sources */,
-				E4CF5C351AB4A3FD00A87384 /* Class.swift in Sources */,
+				E4CF5C351AB4A3FD00A87384 /* ClassRoom.swift in Sources */,
 				E4CF5C331AB4A3F200A87384 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VirtualRewardsNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -389,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VirtualRewardsNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

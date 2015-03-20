@@ -26,14 +26,16 @@ class AddStudentViewController: UIViewController {
     
     @IBAction func addStudentAction(sender: AnyObject) {
         let namesString: String = namesTextField.text
+        if namesString != ""{
         let namesArray: [String] = split(namesString){$0 == ","}
-        Class.sharedInstance.addStudents(namesArray)
+        ClassRoom.sharedInstance.addStudents(namesArray)
         println(namesArray)
-        self.navigationController!.popViewControllerAnimated(true)
+        }
+        self.navigationController!.dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func cancelAction(sender: AnyObject) {
-        self.navigationController!.popViewControllerAnimated(true)
+        self.navigationController!.dismissViewControllerAnimated(true, completion: nil)
     }
     /*
     // MARK: - Navigation
